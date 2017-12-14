@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="utf-8">
+	<title>HLS Player</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/video-js.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script>
+		videojs.options.flash.swf="player/video-js.swf";
+		var urlList = [];
+		// var dataJson = {[]};
+
+	</script>
+
+	<style>
+		dl{
+			float:left;
+			margin: 8px;
+			border:0px solid #000;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- content/begin -->
+	<div id="content">
+		<div class="video" id="HLSPlayer-1" setup-url="http://172.16.10.152:8080/camWebsite/camera/1/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+
+
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_1.m3u8";
+			
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C386 A座楼梯门口</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-2" setup-url="http://172.16.10.152:8080/camWebsite/camera/2/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_2.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C387 A座1F东走道</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-3" setup-url="http://172.16.10.152:8080/camWebsite/camera/3/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_3.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C393 A座1F西南电梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-4" setup-url="http://172.16.10.152:8080/camWebsite/camera/4/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_4.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C395 A座1F货梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-5" setup-url="http://172.16.10.152:8080/camWebsite/camera/5/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_5.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C392 A座1F西楼梯门</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-6" setup-url="http://172.16.10.152:8080/camWebsite/camera/6/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_6.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C396 A座1F西电梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-7" setup-url="http://172.16.10.152:8080/camWebsite/camera/7/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_7.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C397 A座1F东电梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-8" setup-url="http://172.16.10.152:8080/camWebsite/camera/8/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_8.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C400 A座2F西电梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-9" setup-url="http://172.16.10.152:8080/camWebsite/camera/9/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_9.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C399 A座2F西电梯厅2</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-10" setup-url="http://172.16.10.152:8080/camWebsite/camera/10/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-4-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_10.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C401 A座2F西电梯厅1</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-11" setup-url="http://172.16.10.152:8080/camWebsite/camera/11/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-2-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_11.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C402 A座2F空调机房走道</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-12" setup-url="http://172.16.10.152:8080/camWebsite/camera/12/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-2-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_12.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C257 12号电梯</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-13" setup-url="http://172.16.10.152:8080/camWebsite/camera/13/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-2-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_13.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C258 11号电梯</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-14" setup-url="http://172.16.10.152:8080/camWebsite/camera/14/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-2-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_14.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C404 A座1F货梯厅</h2></div>
+		</div>
+		<div class="video" id="HLSPlayer-15" setup-url="http://172.16.10.152:8080/camWebsite/camera/15/setup">
+			<script language="javascript">
+			var winHeight = window.innerHeight-200;
+			var vID = "";
+			var vWidth = "100%"; //播放器宽度
+			var vHeight = winHeight/3-2-54; //播放器高度
+			var vFile = ""; //播放器配置文件[设广告参数]
+			var vPlayer = "player/HLSPlayer.swf?v=1.5"; //播放器文件
+			var vHLSset="player/HLS.swf";
+			var vPic = "pics/screenshot_1.png"; //视频缩略图
+
+			var vCssurl = "css/mini.css"; //移动端 CSS
+			
+			//PC
+			
+			//m3u8地址，适配PC，安卓，IOS，WP
+			var vHLSurl = "http://"+window.location.hostname+":"+window.location.port+"/HLS-demo/m3u8/camera_15.m3u8";
+			</script>
+			<script type="text/javascript" src="js/hls.min.js"></script>
+			<div><h2>C406 A座3F东楼梯门</h2></div>
+		</div>
+
+	</div>
+	<!-- content/end -->
+	<div class="clear"></div>
+	<script>
+		$(function(){
+			var num = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15";
+			var reqUrl = "http://"+window.location.hostname+":"+window.location.port+"/camWebsite/camera/15/"+num+"/setup"
+			$.ajax({
+				url: reqUrl,
+				type: 'GET',
+				dataType:'jsonp',
+				jsonp:"callback",
+				jsonpCallback: "urlFunction",
+				success:function(result){
+					console.log("success");
+				},
+				error:function(error){
+					console.log(error.statusText);
+				}
+			})
+			
+		});
+		window.onbeforeunload = function(e) {
+			var flag = false;
+			$.ajax({
+				url: "http://"+window.location.hostname+":"+window.location.port+"/camWebsite/camera/all/teardown",
+				// url: "http://172.16.10.152:8080/camWebsite/camera/all/teardown",
+				type: 'GET',
+				dataType:'json',
+				// jsonp:"callback",
+				async: false ,
+				// jsonpCallback: "urlFunction",
+				success:function(res){
+					if(res.success){
+						alert("关闭成功")
+					}
+					flag = res.success;
+				},
+				error:function(error){
+					console.log(error);
+				}
+			});
+			if(flag){
+				e.returnValue="关闭播放器成功"; 
+
+				return e.returnValue;
+			}
+		} 
+	</script>
+	<script>
+
+	</script>
+</body>
+</html>
